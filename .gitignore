@@ -1,4 +1,4 @@
 __pycache__/
 *.pyc
-tests/fixtures/_runs/_det*.jsonl
-tests/fixtures/_runs/_slice.jsonl
+tests/fixtures/_runs/
+scale_oracle.jsonl
