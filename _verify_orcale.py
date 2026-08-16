@@ -12,7 +12,7 @@ from pathlib import Path
 
 PINNED_MDB_SHA256 = "534c166cb2c0f78420a7691c51890432139862f1667e2edfc6374852612b2744"
 
-REPO = Path(__file__).resolve().parents[1]
+REPO = Path(__file__).resolve().parent
 DATA_FILE = REPO / "data" / "msdrg.mdb"
 
 

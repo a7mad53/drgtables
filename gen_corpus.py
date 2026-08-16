@@ -30,12 +30,11 @@ import sqlite3
 import sys
 from pathlib import Path
 
-REPO = Path(__file__).resolve().parents[1]
-sys.path.insert(0, str(REPO / "tools"))
+REPO = Path(__file__).resolve().parent
+sys.path.insert(0, str(REPO))
 import schema  # noqa: E402
 
-# The SQLite export lives ONE LEVEL ABOVE the repo (Phase-0 §8.1).
-DEFAULT_SQLITE = REPO.parent / "msdrg.db"
+DEFAULT_SQLITE = REPO / "msdrg.db"
 
 # A valid MCE discharge_date per fiscal year (mid-FY, within 20000101..21001231).
 FY_DISCHARGE_DATE = {2023: 20230115, 2024: 20240115, 2025: 20250115,

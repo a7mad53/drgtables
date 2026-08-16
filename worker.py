@@ -31,8 +31,8 @@ import json
 import sys
 from pathlib import Path
 
-REPO = Path(__file__).resolve().parents[1]
-sys.path.insert(0, str(REPO / "tools"))
+REPO = Path(__file__).resolve().parent
+sys.path.insert(0, str(REPO))
 import schema  # noqa: E402  (local import after path setup)
 
 

@@ -28,8 +28,8 @@ from dataclasses import dataclass, field
 from pathlib import Path
 from typing import Any
 
-REPO = Path(__file__).resolve().parents[1]
-sys.path.insert(0, str(REPO / "tools"))
+REPO = Path(__file__).resolve().parent
+sys.path.insert(0, str(REPO))
 import schema  # noqa: E402
 
 _MISSING = object()

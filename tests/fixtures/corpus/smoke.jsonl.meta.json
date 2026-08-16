@@ -1,0 +1,24 @@
+{
+  "counts": {
+    "convert": 107,
+    "corpus_sha256": "f70a706b0e96727f8aaa6e3663e2df73c4641eb9b9ac3d1c01f0f0a61fb6d94c",
+    "group": 1442,
+    "mce": 241,
+    "total": 1790
+  },
+  "generated_by": "tools/gen_corpus.py",
+  "kind": "smoke",
+  "n_random": 0,
+  "schema_version": 1,
+  "seed": 42,
+  "sqlite_path": "C:\\Users\\ahmad\\OneDrive\\Documents\\DRG\\msdrg.db",
+  "sqlite_sha256": "11fa4735b6e39738c8a71d50b19700509b77442fe4a89015ea65ecd9ed359527",
+  "universe_sizes": {
+    "discharge_statuses": 43,
+    "dx_v400": 147278,
+    "dx_v440": 74879,
+    "mce_dx10": 84932,
+    "mce_dx9": 23012,
+    "pr_v440": 83378
+  }
+}

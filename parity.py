@@ -33,13 +33,13 @@ import sys
 import time
 from pathlib import Path
 
-REPO = Path(__file__).resolve().parents[1]
-sys.path.insert(0, str(REPO / "tools"))
+REPO = Path(__file__).resolve().parent
+sys.path.insert(0, str(REPO))
 import gen_corpus  # noqa: E402
 import parity_diff  # noqa: E402
 import schema  # noqa: E402
 
-WORKER = REPO / "tools" / "worker.py"
+WORKER = REPO / "worker.py"
 DATA = REPO / "data" / "msdrg.mdb"
 CORPUS_DIR = REPO / "tests" / "fixtures" / "corpus"
 RUN_DIR = REPO / "tests" / "fixtures" / "_runs"
